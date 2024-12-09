@@ -73,15 +73,15 @@ const NavBar = () => {
   };
 
   return (
-    <header className="header w-full h-[70px] flex items-center justify-between px-4 bg-white shadow-md border-b-[0.5px] border-gray-300" ref={headerRef}>
-      <div className="logo flex items-center space-x-4">
+    <header className="header  h-[70px] w-full   flex items-center justify-between px-28 bg-white   " ref={headerRef}>
+      <div className="logo flex items-center space-x-4 w-[30%]">
         <Link to="/home">
           <h1 className="text-lg font-bold text-gray-800 cursor-pointer">3legant.
 </h1>
         </Link>
       </div>
 
-      <div className="navigation flex items-center space-x-12">
+      <div className="navigation flex items-center space-x-12 w-[40%]">
         <ul className="menu flex items-center space-x-10">
           {nav_link.map((item, index) => (
             <li key={index} className="nav_item text-gray-800 font-medium cursor-pointer">
@@ -96,27 +96,28 @@ const NavBar = () => {
         </ul>
       </div>
 
-      <div className="nav_icon flex items-center space-x-4">
-      {/* Search Icon */}
-      <button
-            className="text-gray-500 hover:text-gray-800 focus:outline-none ml-4"
-            onClick={toggleSearch}
-            aria-label="Search"
-          >
-            <i className="ri-search-line text-lg"></i>
-          </button>
-      {isSearchVisible && (
-          <div className="search flex items-center space-x-2 p-2 bg-gray-100 rounded-md mt-2">
-            <input
+      <div className="nav_icon flex  justify-center items-center space-x-4 w-[30%]">
+       
+       
+          <div
+  className={`search flex items-center space-x-2 p-2 bg-gray-100 rounded-md mt-2 ${
+     isSearchVisible ? "opacity-100" : "opacity-0 pointer-events-none"
+  } transition-opacity duration-300`}
+>            <input
               type="text"
               placeholder="Looking for?"
               className="bg-transparent outline-none text-sm font-light placeholder-gray-500 flex-grow"
               onChange={() => console.log("ahmed")}
             />
-            <i className="ri-search-line text-gray-600"></i>
-          </div>
-        )}
-
+           </div>
+        
+          <button
+            className="text-gray-500 hover:text-gray-800 focus:outline-none ml-4"
+            onClick={toggleSearch}
+            aria-label="Search"
+          >
+          <i className="ri-search-line text-lg"></i>
+          </button>
         <span className="fav_icon relative cursor-pointer" onClick={navigateFav}>
           <i className="ri-heart-line text-lg text-gray-800"></i>
           <span className="badge absolute top-1 right-0 flex items-center justify-center bg-gray-800 text-white rounded-full w-5 h-5 text-xs font-semibold">0</span>
@@ -129,7 +130,7 @@ const NavBar = () => {
 
         <span className="profile relative">
           <i onClick={() => setToggle(!toggle)} className="ri-user-3-line text-lg text-gray-800 cursor-pointer"></i>
-          <div className={`${toggle ? "block" : "hidden"} profile_action absolute top-12 right-0 w-48 p-3 bg-gradient-to-r from-red-600 to-gray-800 text-white rounded-md`}>
+          <div className={`${toggle ? "block" : "hidden"} profile_action absolute top-12 right-0 w-48 p-3 bg-gradient-to-r from-gray-400 to-gray-800 text-white rounded-md`}>
             <div className="flex flex-col items-center space-y-2" onClick={() => setToggle(!toggle)}>
               {user ? (
                 <>

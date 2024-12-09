@@ -1,10 +1,14 @@
+import Categories from "../components/banner/Categories"
+import SilderBanner from "../components/banner/SilderBanner"
+
  
 const Home = () => {
   return (
-    <div className="bg-blue-500 text-white text-center p-5">
-      <h1 className="text-2xl  ">Hello <i className="ri-heart-line"></i></h1>
-      
-    </div>
+     <>
+     <div className="px-28"> <SilderBanner/></div>
+     <div className="px-28"> <Categories/></div>
+
+     </>
   )
 }
 

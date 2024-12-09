@@ -8,6 +8,7 @@ import Loading from '../components/loading/Loading';
  const Layout = () => {
    return (
      <div> 
+     
      <Loading/> 
 <Button/>
 <Curser/>
