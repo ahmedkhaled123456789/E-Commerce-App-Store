@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
- import ReactPaginate from "react-paginate";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './Pagination.css';
+import ReactPaginate from "react-paginate";
+import './Pagination.css';  
 
 const Pagination = ({ pageCount, onPress }) => {
     const handlePageClick = (data) => {
@@ -17,16 +16,16 @@ const Pagination = ({ pageCount, onPress }) => {
             pageRangeDisplayed={5}
             pageCount={pageCount}
             previousLabel="Prev"
-            containerClassName={"pagination justify-content-center"}
-            pageClassName={"page-item"}
-            pageLinkClassName={"page-link"}
-            previousClassName={"page-item"}
-            nextClassName={"page-item"}
-            previousLinkClassName={"page-link"}
-            nextLinkClassName={"page-link"}
-            breakClassName={"page-item"}
-            breakLinkClassName={"page-link"}
-            activeClassName={"active"}
+            containerClassName="flex items-center justify-center space-x-2 mt-4"
+            pageClassName="group"
+            pageLinkClassName="px-3 py-1 border border-gray-300 rounded-md text-gray-600 hover:bg-gray-100 focus:ring focus:ring-indigo-300"
+            previousClassName="group"
+            nextClassName="group"
+            previousLinkClassName="px-3 py-1 border border-gray-300 rounded-md text-gray-600 hover:bg-gray-100 focus:ring focus:ring-indigo-300"
+            nextLinkClassName="px-3 py-1 border border-gray-300 rounded-md text-gray-600 hover:bg-gray-100 focus:ring focus:ring-indigo-300"
+            breakClassName="group"
+            breakLinkClassName="px-3 py-1 border border-gray-300 rounded-md text-gray-600"
+            activeClassName="bg-indigo-500 text-white border-indigo-500"
         />
     );
 };

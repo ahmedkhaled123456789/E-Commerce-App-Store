@@ -21,14 +21,14 @@
      width: 200px;
      height: 200px;
      border-radius: 50%;
-     box-shadow: 0 4px 0  #DB4444;
+     box-shadow: 0 4px 0  #000;
      background: transparent;
      animation: animate 1s linear infinite;
    }
    .text{
      width: 200px;
      height: 200px;
-     color:  #DB4444;
+     color:  #000;
      border-radius: 50%;
      position: absolute;
      top: 0;
@@ -42,7 +42,7 @@
      box-shadow: 0 0 5px rgba(0,0,0,.2);
    }
    .text span{
-     color: #DB4444;
+     color: #000;
    }
 
    

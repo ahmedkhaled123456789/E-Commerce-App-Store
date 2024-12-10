@@ -29,8 +29,7 @@ const Button = () => {
    
      <div className={`scrolltotop-btn ${isVisible ? 'active' : ''}`} onClick={scrollToTop}>
       <a href="#">
-        <i className="fas fa-arrow-up"></i>
-      </a>
+      <i className="ri-arrow-up-line"></i>      </a>
     </div>
      
   )

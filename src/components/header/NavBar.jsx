@@ -35,7 +35,7 @@ const NavBar = () => {
 
   const nav_link = [
     {
-      path: "home",
+      path: "/",
       display: "Home",
     },
     {
@@ -116,21 +116,21 @@ const NavBar = () => {
             onClick={toggleSearch}
             aria-label="Search"
           >
-          <i className="ri-search-line text-lg"></i>
+          <i className="ri-search-line text-2xl"></i>
           </button>
         <span className="fav_icon relative cursor-pointer" onClick={navigateFav}>
-          <i className="ri-heart-line text-lg text-gray-800"></i>
-          <span className="badge absolute top-1 right-0 flex items-center justify-center bg-gray-800 text-white rounded-full w-5 h-5 text-xs font-semibold">0</span>
+          <i className="ri-heart-line text-2xl text-gray-300"></i>
+          <span className="badge absolute bottom-4 left-4 flex items-center justify-center bg-gray-800 text-white rounded-full w-5 h-5 text-xs font-semibold">0</span>
         </span>
 
         <span className="cart_icon relative cursor-pointer" onClick={navigateIcon}>
-          <i className="ri-shopping-cart-2-line text-lg text-gray-800"></i>
-          <span className="badge absolute top-1 right-0 flex items-center justify-center bg-gray-800 text-white rounded-full w-5 h-5 text-xs font-semibold">1</span>
+          <i className="ri-shopping-cart-2-line text-2xl text-gray-800"></i>
+          <span className="badge absolute  bottom-4 left-4 flex items-center justify-center bg-gray-800 text-white rounded-full w-5 h-5 text-xs font-semibold">1</span>
         </span>
 
         <span className="profile relative">
-          <i onClick={() => setToggle(!toggle)} className="ri-user-3-line text-lg text-gray-800 cursor-pointer"></i>
-          <div className={`${toggle ? "block" : "hidden"} profile_action absolute top-12 right-0 w-48 p-3 bg-gradient-to-r from-gray-400 to-gray-800 text-white rounded-md`}>
+          <i onClick={() => setToggle(!toggle)} className="ri-user-3-line text-2xl text-gray-800 cursor-pointer"></i>
+          <div className={`${toggle ? "block" : "hidden"} profile_action absolute top-12 right-0 w-48 p-3 bg-gradient-to-r from-gray-400 z-50 to-gray-800 text-white rounded-md`}>
             <div className="flex flex-col items-center space-y-2" onClick={() => setToggle(!toggle)}>
               {user ? (
                 <>

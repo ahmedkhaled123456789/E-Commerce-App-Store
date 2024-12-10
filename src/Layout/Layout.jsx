@@ -4,7 +4,8 @@ import Curser from '../components/curser/Curser';
 import Head from '../components/header/Head';
 import NavBar from '../components/header/NavBar';
 import Loading from '../components/loading/Loading';
- 
+import Footer from '../components/footer/Footer';
+
  const Layout = () => {
    return (
      <div> 
@@ -15,6 +16,7 @@ import Loading from '../components/loading/Loading';
 <Head/>
 <NavBar/>
     <AppRoutes/>  
+    <Footer/>
      </div>
    )
  }

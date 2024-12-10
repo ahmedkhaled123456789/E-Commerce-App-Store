@@ -18,7 +18,7 @@ const Head = () => {
               <p className="text-sm text-gray-700">
                 <i className="ri-discount-percent-line text-lg"></i> 30% off
                 storewide — Limited time!
-                <Link to="/shop" className="text-blue-500 underline ml-1">
+                <Link to="/shop" className=" underline ml-1">
                   <span>
                     Shop Now <i className="ri-arrow-right-line"></i>
                   </span>
