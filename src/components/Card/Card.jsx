@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
- import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import imgDefault from '../../assets/images/counter-timer-img.png';
 import './Card.css'
 const Card = ({ product }) => {
-   const photos = [imgDefault];
-   const background = photos[Math.floor(Math.random() * photos.length)];
+  const photos = [imgDefault];
+  const background = photos[Math.floor(Math.random() * photos.length)];
 
   return (
     <div className="w-64 mb-5 mr-5 cursor-pointer">
@@ -23,7 +23,7 @@ const Card = ({ product }) => {
         </div>
         <motion.img
           whileHover={{ scale: 0.9 }}
-          src={product.image|| background}
+          src={product.image || background}
           alt={product.title}
           className="h-[150px] w-[200px] mt-4"
         />
@@ -32,7 +32,7 @@ const Card = ({ product }) => {
         </div>
       </div>
       <div className="mt-4">
-      <div className="flex items-center gap-1 text-yellow-500 mt-2">
+        <div className="flex items-center gap-1 text-yellow-500 mt-2">
           {[...Array(Math.floor(product.ratingsAverage || 0))].map((_, index) => (
             <i key={index} className="ri-star-s-fill"></i>
           ))}
@@ -54,7 +54,7 @@ const Card = ({ product }) => {
             ${product.price}
           </span>
         </div>
-        
+
       </div>
     </div>
   );
