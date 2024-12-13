@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Card from "../components/Card/Card";
+import Breadcrumb from "../components/Breadcrumb";
  
 const Shop = () => {
     const product = [
@@ -36,8 +37,22 @@ const Shop = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const breadcrumbItems = [
+    { name: 'Home', href: '/', isHome: true },
+    { name: 'Shop', href: '#' },
+    
+  ];
   return (
     <section className="py-8 px-28">
+     {/* Header Section */}
+     <div className="header_section  flex justify-center items-center   ">
+        <div className="  text-center">
+        <Breadcrumb breadcrumbItems={breadcrumbItems} /> 
+          <h1 className="text-5xl font-[400]">Shop Page</h1>
+          <p className="text-gray-800 mt-5">Let’s design the place you always imagined.</p>
+        </div>
+      </div>
       {/* Filters */}
       <div className="container mx-auto">
         <div className="flex flex-wrap -mx-4">

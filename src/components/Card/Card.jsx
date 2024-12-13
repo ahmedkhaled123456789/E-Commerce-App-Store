@@ -17,7 +17,7 @@ const Card = ({ product }) => {
         )}
         <div className="absolute top-2 right-2 grid gap-2">
           <i className="ri-heart-fill w-6 h-6 flex items-center justify-center bg-white rounded-full p-1"></i>
-          <Link to={`/product/${product.id}`} replace>
+          <Link to={`/Product`} replace>
             <i className="ri-eye-line w-6 h-6 flex items-center justify-center bg-white rounded-full p-1"></i>
           </Link>
         </div>

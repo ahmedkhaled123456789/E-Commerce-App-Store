@@ -1,6 +1,7 @@
+/* eslint-disable react/no-unescaped-entities */
 
-import React, { useState } from 'react';
-import Breadcrumb from '../components/header/Breadcrumb'
+import  { useState } from 'react';
+import Breadcrumb from '../components/Breadcrumb'
 import '../Style/ProductsDetails.css'
 const ProductsDetails = () => {
   const [selected, setSelected] = useState('Newest');
@@ -8,22 +9,27 @@ const ProductsDetails = () => {
   const handelImgs = (src) => {
     setImgs(src)
   }
+
+  const breadcrumbItems = [
+    { name: 'Home', href: '#', isHome: true },
+    { name: 'Shirts', href: '#' },
+    { name: 'Living Room', href: '#' },
+    { name: 'Product', href: '#' },
+  ];
   return (
     <section className=''>
-      <Breadcrumb />
-      <div className="p-4  max-w-full mx-auto px-28   flex items-center justify-center">
+<Breadcrumb breadcrumbItems={breadcrumbItems} />      <div className="p-4  max-w-full mx-auto px-28   flex items-center justify-center">
         <div className="lg:flex lg:max-w-6xl lg:w-full">
           {/* صورة المنتج */}
           <div className="relative lg:w-1/2">
             <span className="absolute top-2 left-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">NEW</span>
             <span className="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">-50%</span>
             <img
-              src={imgs} // استبدل هذا الرابط بالصورة الكبيرة
+              src={imgs}  
               alt="Tray Table"
               className="w-full h-auto rounded-lg border border-gray-200"
             />
-            {/* الصور الصغيرة */}
-            <div className="flex justify-between items-center mt-4 space-x-5">
+             <div className="flex justify-between items-center mt-4 space-x-5">
               <img
                 src="https:cdn.shopify.com/s/files/1/0036/0143/2676/products/slim_bedside_table_1_720x.png?v=1633512042" // استبدل هذا الرابط بالصورة الأولى
                 alt="Small 1"
@@ -45,22 +51,19 @@ const ProductsDetails = () => {
             </div>
           </div>
 
-          {/* التفاصيل */}
-          <div className="lg:w-1/2 lg:pl-8 mt-4 lg:mt-0">
+           <div className="lg:w-1/2 lg:pl-8 mt-4 lg:mt-0">
             <h2 className="text-2xl font-bold text-gray-800">Tray Table</h2>
             <p className="text-gray-600 text-sm mt-2">
               Buy one or buy a few and make every space where you sit more convenient. Light and easy to move around with removable tray top, handy for serving snacks.
             </p>
 
             <div className="mt-4">
-              {/* السعر */}
-              <div className="flex items-center space-x-4">
+               <div className="flex items-center space-x-4">
                 <span className="text-3xl font-bold text-gray-800">$199.00</span>
                 <span className="line-through text-gray-400 text-lg">$400.00</span>
               </div>
 
-              {/* المؤقت */}
-              <div className="flex items-center text-sm text-gray-500 mt-4">
+               <div className="flex items-center text-sm text-gray-500 mt-4">
                 <span>Offer expires in:</span>
                 <div className="flex items-center space-x-2 ml-3">
                   <span className="font-bold text-gray-800">02</span><span>Days</span>
@@ -71,8 +74,7 @@ const ProductsDetails = () => {
               </div>
             </div>
 
-            {/* القياسات */}
-            <div className="mt-4">
+             <div className="mt-4">
               <div className="text-gray-500 text-sm">Measurements</div>
               <p className="font-bold text-gray-800">17 1/2x20 5/8 "</p>
               <div className="flex space-x-4 mt-2">
@@ -82,8 +84,7 @@ const ProductsDetails = () => {
               </div>
             </div>
 
-            {/* الأزرار */}
-            <div className="flex items-center mt-6">
+             <div className="flex items-center mt-6">
               <button className="bg-gray-100 px-6 py-2 text-sm font-bold rounded-lg border border-gray-300 mr-4">
                 Wishlist
               </button>
@@ -104,13 +105,13 @@ const ProductsDetails = () => {
 
         <div >
           <h1 className='mt-10 font-medium text-2xl'>Customer Reviews</h1>
-          <div class="relative w-full mt-10 reviews">
+          <div className="relative w-full mt-10 reviews">
             <input
               type="text"
               placeholder="Write your review..."
-              class="input-field"
+              className="input-field"
             />
-            <button class="submit-button">Write Reviews </button>
+            <button className="submit-button">Write Reviews </button>
           </div>
 
           <div className='flex justify-between align-item-center mt-10'>
