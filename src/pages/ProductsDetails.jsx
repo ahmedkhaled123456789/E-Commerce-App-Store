@@ -1,9 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 
-import  { useState } from 'react';
+import  { useEffect, useState } from 'react';
 import Breadcrumb from '../components/Breadcrumb'
 import '../Style/ProductsDetails.css'
 const ProductsDetails = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [selected, setSelected] = useState('Newest');
   const [imgs, setImgs] = useState('https://cdn.shopify.com/s/files/1/0036/0143/2676/products/stone_acacia_bedside_table_1_720x.png?v=1633512055');
   const handelImgs = (src) => {

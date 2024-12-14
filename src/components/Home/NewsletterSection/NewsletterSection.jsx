@@ -1,7 +1,7 @@
  import './NewsletterSection.css'
 const NewsletterSection = () => {
   return (
-    <section className="NewsletterSection bg-gray-50 py-16">
+    <section className="NewsletterSection bg-gray-50 py-16 mt-10" >
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center  px-6 md:px-12">
          <div className="mb-8 md:mb-0 md:w-1/2  text-center ">
           <h2 className="text-3xl font-semibold text-gray-800">

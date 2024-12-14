@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
 import img from '../assets/images/Blog.jpg'
  import Services from '../components/Home/ServicesComponent/Services'
+import { useEffect } from "react";
  
 const ContactPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
     const contacts = [
         {
           icon: "ri-home-4-line",

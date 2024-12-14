@@ -1,11 +1,15 @@
  
-  import img1 from '../assets/images/blog1.jpg';
+  import { useEffect } from 'react';
+import img1 from '../assets/images/blog1.jpg';
   import img2 from '../assets/images/blog2.jpg';
   import img3 from '../assets/images/blog3.jpg';
  import BlogCard from '../components/Blog/BlogCard';
 import Breadcrumb from '../components/Breadcrumb';
  
  const BlogPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
    const blogs = [
      {
        title: "7 ways to decorate your home",

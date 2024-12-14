@@ -1,8 +1,12 @@
+import { useEffect } from 'react';
 import img1 from '../assets/images/bath.jpg';
 import img2 from '../assets/images/bath1.jpg';
 import img3 from '../assets/images/bath2.jpg';
 import BlogSection from '../components/Home/BlogSection/BlogSection'
 const BlogDetails = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="max-w-5xl mx-auto px-4 py-8">
       {/* Blog Title */}

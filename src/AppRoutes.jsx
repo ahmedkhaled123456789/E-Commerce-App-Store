@@ -6,6 +6,7 @@ import ShopCards from "./pages/ShopCards";
 import BlogPage from "./pages/BlogPage";
 import BlogDetails from "./pages/BlogDetails";
 import ContactPage from "./pages/ContactPage";
+import WishList from "./pages/WishList";
 
 const AppRoutes = () => {
   return (
@@ -18,6 +19,7 @@ const AppRoutes = () => {
       <Route path="/blogs" element={<BlogPage />} />
       <Route path="/blogDetails" element={<BlogDetails />} />
       <Route path="/contactPage" element={<ContactPage />} />
+      <Route path="/wishList" element={<WishList />} />
 
     </Routes>
   );
