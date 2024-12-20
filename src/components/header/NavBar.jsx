@@ -43,11 +43,11 @@ const NavBar = () => {
       display: "Shop",
     },
     {
-      path: "Product",
+      path: "shop",
       display: "Product",
     },
     {
-      path: "Contact Us",
+      path: "contactPage",
       display: "Contact Us",
     },
   ];
