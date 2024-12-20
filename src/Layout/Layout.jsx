@@ -8,18 +8,20 @@ import Footer from '../components/footer/Footer';
 import NewsletterSection from '../components/Home/NewsletterSection/NewsletterSection';
 
  const Layout = () => {
+  const user = false;
    return (
      <div> 
      
      <Loading/> 
 <Button/>
 <Curser/>
-<Head/>
+{user && <Head />}
 <NavBar/>
     <AppRoutes/> 
     <NewsletterSection/>
  
-    <Footer/>
+    {user && <NavBar />}
+
      </div>
    )
  }

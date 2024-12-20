@@ -7,7 +7,8 @@ import BlogPage from "./pages/BlogPage";
 import BlogDetails from "./pages/BlogDetails";
 import ContactPage from "./pages/ContactPage";
 import WishList from "./pages/WishList";
-
+import Login from "./pages/Auth/Login";
+import Register from "./pages/Auth/Register";
 const AppRoutes = () => {
   return (
 

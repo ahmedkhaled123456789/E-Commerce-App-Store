@@ -73,6 +73,18 @@ button , input, textarea{
   margin-bottom: 40px;
 
  }
+ 
+/* Classes */
+.custom-input {
+  border-bottom: 1px solid #E8ECEF;
+  background-color: #E8ECEF;
+
+}
+.custom-input::placeholder {
+  font-size: 14px;
+  font-weight: 300;
+}
+
 /*=======Scroll bar=======*/
 ::-webkit-scrollbar{
     width: 10px;
