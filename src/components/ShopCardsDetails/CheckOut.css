@@ -1,0 +1,23 @@
+input {
+  border: solid #d1d1d1 1px;
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.pay_card {
+  border: solid #d1d1d1 1px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.pay_card span {
+  font-size: 14px;
+  padding: 10px;
+}
+.btn_form {
+  background: black;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
