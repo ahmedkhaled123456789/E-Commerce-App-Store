@@ -1,10 +1,10 @@
-import ShopCards from "../ShopCardsDetails/ShopCards";
-import CheckOutDetails from "../ShopCardsDetails/CheckOutDetails";
+import ShopCards from "../components/ShopCardsDetails/ShopCards";
+import CheckOutDetails from "../components/ShopCardsDetails/CheckOutDetails";
 
 import { useState } from "react";
-import OrderComplete from "../ShopCardsDetails/OrderComplete";
+import OrderComplete from "../components/ShopCardsDetails/OrderComplete";
 
-const HeaderShopCart = () => {
+const ShopCartPages = () => {
   const [tap, setTap] = useState(1);
 
   return (
@@ -60,4 +60,4 @@ const HeaderShopCart = () => {
   );
 };
 
-export default HeaderShopCart;
+export default ShopCartPages;

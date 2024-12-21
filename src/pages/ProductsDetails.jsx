@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import Breadcrumb from '../components/header/Breadcrumb'
+import { useState, useEffect } from 'react';
+import Breadcrumb from '../components/Breadcrumb'
 import '../Style/ProductsDetails.css'
 const ProductsDetails = () => {
   useEffect(() => {
@@ -19,8 +19,7 @@ const ProductsDetails = () => {
   ];
   return (
     <section className='pb-5'>
-      <Breadcrumb />
-      <div className="p-4  max-w-full mx-auto px-28   flex items-center justify-center">
+      <Breadcrumb breadcrumbItems={breadcrumbItems} />       <div className="p-4  max-w-full mx-auto px-28   flex items-center justify-center">
         <div className="lg:flex lg:max-w-6xl lg:w-full">
 
           <div className="relative lg:w-1/2">
@@ -119,7 +118,7 @@ const ProductsDetails = () => {
                 type="text"
                 placeholder="Write your review..."
                 className="input-field"
-                className="input-field"
+
               />
               <button className="submit-button">Write Reviews </button>
               <button className="submit-button">Write Reviews </button>
@@ -184,6 +183,8 @@ const ProductsDetails = () => {
               </div>
             </div>
           </div>
+        </div>
+
       </section>
 
     </section >
